@@ -50,7 +50,7 @@ public class test_4 {
         i = 5;
         j = 0;
 
-        j = ++i; // 전위진감 이므로 j = 6 (1 증가 후 변수의 값을 읽음)
+        j = ++i; // 전위진감 이므로 j = 6 (1 증가 후 출력)
         System.out.println("j=++i; 실행 후, i=" + i +", j="+j);
     }
 }
