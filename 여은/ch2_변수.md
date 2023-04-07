@@ -46,6 +46,18 @@
 
     Data today = new Data(); // Data객체를 생성해서, 그 주소를 today에 저장  
  - - - 
+ ### 상수(constant)
+ > 한번 값을 저장하면 다른 값으로 변경할 수 없다
+ > 상수를 선언할 때는 변수의 타입 앞에 'final'을 붙여줘야 한다.
+ 
+     final int MAX_SPEED = 10; // 상수 MAX_SPEED를 선언 & 초기화 (무조건 동시에!)
+ ### 리터럴(literal)
+ > 그 자체로 값을 의미하는 것
+ 
+     int year = 2014;
+     final int MAX_VALUE = 100;
+     
+     year - 변수 MAX_VALUE - 상수 2014, 100 - 리터럴
 ### ✏️형변환(캐스팅, casting)
 > 변수 또는 상수의 타입을 다른 타입으로 변환하는 것
 
@@ -57,7 +69,23 @@
     ex) double d = 85.4;
         int score = (int)d; // double 타입 변수 d를 int 타입으로 형변환
         int score = (int)85.4; // 변수 d의 값을 읽어 와서 형변환
-        int score = 85; // 형변환의 결과인 85를 변수 score에 저장한다.
+        int score = 85; // 형변환의 결과인 85를 변수 score에 저장한다.   
+- 형변환 연산자는 피연산자의 값을 읽어서 지정된 타입으로 형변환하고 그 결과를 반환
+- 피연산자의 변수값은 형변환 후에도 아무런 변화가 없다   
+
+
+### 강제 형변환
+> 큰 타입을 작은 타입으로 변환
+
+    ex) int a = 128;
+        short b = (short) a; // int 보다 좁은 공간에 넣으려고 하기에 에러
+        byte c = (byte) a; // -128 ~ 127
+### 자동 형변환
+> 작은 타입을 큰 타입으로 변환
+
+    ex) short x = 10; // short 는 int 보다 작음
+        int y = x;
+    
 
 
 
