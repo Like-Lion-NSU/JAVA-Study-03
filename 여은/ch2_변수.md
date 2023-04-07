@@ -58,6 +58,7 @@
      final int MAX_VALUE = 100;
      
      year - 변수 MAX_VALUE - 상수 2014, 100 - 리터럴
+ - - -
 ### ✏️형변환(캐스팅, casting)
 > 변수 또는 상수의 타입을 다른 타입으로 변환하는 것
 
