@@ -91,7 +91,7 @@ if (조건식) { 조선식이 참(true)일 때 수행될 문장 }
 
     for(int i=1; i<=10; i++) {            int i=1;
        system.out.println(i);      <->    while (i<=10) {
-    }                                          system.out.orintln(i);
+    }                                          system.out.rintln(i);
                                                 i++;
                                            }
                                            
