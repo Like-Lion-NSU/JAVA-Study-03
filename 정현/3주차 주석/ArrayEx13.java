@@ -8,14 +8,14 @@ public class ArrayEx13 {
                           , "1100", "1101", "1110", "1111" };
         String result="";
 
-        for(int i=0; i<hex.length; i++) {
-            if(hex[i] >='0' && hex[i] <='9') {
-                result +=binary[hex[i]-'0'];
+        for(int i=0; i<hex.length; i++) {     // for문
+            if(hex[i] >='0' && hex[i] <='9') {  
+                result +=binary[hex[i]-'0'];     //'8'-'0'의 결과는 8이다.
             }else {
-                result +=binary[hex[i]-'A'+10];
+                result +=binary[hex[i]-'A'+10];   // 'C'-'A'의 결과는 2
             }
         }
-
+                                       // String(char[] value)
         System.out.println("hex:"+ new String(hex));
         System.out.println("binary:"+result);
     }
