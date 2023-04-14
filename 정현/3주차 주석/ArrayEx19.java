@@ -13,20 +13,20 @@ public class ArrayEx19 {
         System.out.println("============================================");
 
         for(int i=0;i < score.length; i++) {
-            int sum = 0;
-            float avg = 0.0f;
+            int sum = 0;    // 총점
+            float avg = 0.0f;     // 평균
             korTotal += score[i][0];
             engTotal += score[i][1];
             mathTotal += score[i][2];
             System.out.printf("%3d", i+1);
 
             for(int j=0; j< score[i].length;j++) {
-                sum += score[i][j];
-                System.out.printf("%5d", score[i][j]);
+                sum += score[i][j];    // 각 과목에 점수를 더한다.
+                System.out.printf("%5d", score[i][j]); 
             }
 
             avg = sum/(float)score[i].length;
-            System.out.printf("%5d %5.1f%n", sum, avg);
+            System.out.printf("%5d %5.1f%n", sum, avg);   // 총점과 평균을 출력
         }
 
         System.out.println("================================");
