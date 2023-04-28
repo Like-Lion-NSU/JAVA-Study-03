@@ -1,0 +1,49 @@
+package Likelion;
+
+class CastingTest1{
+    public static void main(String args[]){
+        Car car = null;     //car는 공백
+        FireEngine fe = new FireEngine();   //new FireEngine 변수 fe로 정의
+        FireEngine fe2 = null;  //fe2는 공백
+
+        fe.water();
+        car = fe;   // car =(Car)fe;에서 형변환이 생략된 형태이다.
+//        car.water();
+        fe2 = (FireEngine)car; // 자손타입 <- 조상타입
+        fe2.water();
+    }
+}
+class Car{          //자동차 클래스생성
+    String color;   //String타입의 색상 변수 생성
+    int door;   //int타입의 문 변수 생성
+
+    void drive() {    //운전하는 기능 메소드 생성
+        System.out.println("drive, Brrrrr~"); // drive, Brrrr~출력
+    }
+    void stop() {    //멈추는 기능 메소드 생성
+        System.out.println("Stop!!!!"); // Stop!! 출력
+    }
+    class FireEngine extends  Car{      //소방차 Car에서 상속받음 그럼 뭘 상속받았지?
+        void water(){               //물을 뿌리는 기능
+            System.out.println("water!!"); }    //water!! 출력
+
+    }
+}
+
+2번
+
+package Likelion;
+import java.util.Date;
+import java.text.SimpleDateFormat;
+
+class ImportTest{
+    public static void main(String[]args){
+        Date today = new Date(); // todat라는 날짜변수 생성
+
+        SimpleDateFormat date = new SimpleDateFormat("yyyy/MM/dd"); //날짜형식 년도/달/일 설정
+        SimpleDateFormat time = new SimpleDateFormat("hh:mm:ss a"); //시간 형식 시간:분:초 요일 약자
+
+        System.out.println("오늘 날짜는 " + date.format(today)); //오늘 날짜는 오늘일자
+        System.out.println("현재 시간은 " + time.format(today)); // 현재 시간은 오늘 현재시간
+    }
+}
