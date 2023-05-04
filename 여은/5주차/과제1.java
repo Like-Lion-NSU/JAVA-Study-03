@@ -1,17 +1,16 @@
-package study0505;
-
-public class vt {
+public class TV {
     public static void main(String[] args) {
-        TV myTV = new TV("LG",2017,32);
+        TVE myTV = new TVE("LG",2017,32);
         myTV.show();
     }
 }
-class TV {
-   private String brand;
+class TVE {
+    private String brand;
     private int year;
+
     private int size;
 
-    TV(String brand, int year, int size) {
+    TVE(String brand, int year, int size) {
         this.brand=brand;
         this.year=year;
         this.size=size;
