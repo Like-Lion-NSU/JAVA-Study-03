@@ -9,7 +9,6 @@ public class vt {
 class TV {
    private String brand;
     private int year;
-
     private int size;
 
     TV(String brand, int year, int size) {
