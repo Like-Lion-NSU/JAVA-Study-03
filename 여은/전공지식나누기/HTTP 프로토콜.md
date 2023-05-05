@@ -33,7 +33,7 @@
 ✉️메세지 구조
 - 시작줄/헤더/바디 로 나눌 수 있다.    
 - 시작줄
-  - 요청시, 메서드와 요청 URL,HTTP 버저
+  - 요청시, 메서드와 요청 URL,HTTP 버전
   - 응답시, HTTP 버전, 상태 코드 및 사유 구절
 - 헤더
   - 요청과 응답 메세지에 대한 추가적인 정보를 담고 있다.
@@ -44,7 +44,7 @@
 
 
      #### 요청 메세지 구조 예제  
-        /hello.txt HTTP/1.1  // 시작줄
+        GET /hello.txt HTTP/1.1  // 시작줄 (GET: 메서드, hellO~ : 요청 URL, 1.1 : HTTP 버전)
         User-Agent: curl/7.16.3 libcurl/7.16.3 OpenSSL/0.9.7l zlib/1.2.3  // 헤더
         Host: www.example.com					// 헤더							
         Accept-Language: en, mi			  // 헤더							
